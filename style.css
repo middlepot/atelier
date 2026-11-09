@@ -302,8 +302,41 @@ button:hover{background:#ece6e3}.status{text-align:center;margin:20px 0 10px}
 
 
 @media(max-width:600px){
+  h1{
+    font-size:1.8em;
+}
+  h2{
+    font-size:1.4em !important;
+}
+body{
+  font-family: 'Lora', serif;
+  font-size: 0.8rem;
+}
+.eyebrow{
+    font-size:0.8rem;
+}
+.letter{
+    width:100%;
+        border: 30px solid transparent;
+    border-image-source: url('./img/paper.png');
+    border-image-slice: 18% fill;
+    border-image-repeat: round;
+    background-clip: padding-box;
+    background-color: transparent;
+}
+
+.atelier{
+    margin-top:1vh;
+    margin-bottom:3vh;
+    border: 50px solid transparent;
+    border-image-source: url('./img/frame.png');
+    border-image-slice: 25% fill;
+    border-image-repeat: round;
+    background-clip: padding-box;
+    background-color: transparent;
+}
     .atelier-lampshade{
-        width:150px;top:-105px;left:-95px;
+        width:120px;top:-95px;left:-70px;
     }
     .letter-flower{
         width:120px;right:-55px;bottom:-10px;
