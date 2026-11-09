@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>the occasional atelier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css?v=1"></head>
+<body><main><div class="atelier"><img class="atelier-lampshade" src="./img/lampshade.png" alt="" aria-hidden="true" draggable="false"><header>
+<h1>the occasional atelier</h1>
+<p class="eyebrow">commissions for the disposition of the day</p></header>
+         <div class="music-player">
+<button class="music-toggle" aria-label="Play music" type="button">
+    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+    <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" hidden>
+      <path d="M6 5h4v14H6zm8 0h4v14h-4z"/>
+    </svg>
+  </button>
+  <input class="music-progress" type="range"
+         min="0" max="100" value="0"
+         aria-label="Music progress">
+  <audio autoplay loop preload="metadata" src="a_precious_letter.mp3"></audio>
+</div> 
+<script src="musicplayer.js"></script>
+<section class="controls" aria-label="weather and correspondence"><label for="weather">today is </label><span class="weather-picker"><select id="weather"><option value="sunny-mild">sunny & mild</option><option value="rainy-overcast">rainy & overcast</option><option value="cold-frosty">cold & frosty</option><option value="warm-bright">warm & bright</option></select><button type="button" id="weather-trigger" class="weather-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="weather-menu" hidden><span id="weather-value"></span><span class="weather-chevron" aria-hidden="true"></span></button><div id="weather-menu" class="weather-menu" role="listbox" aria-label="weather" hidden></div></span></section>
+<p id="status" class="status" aria-live="polite"></p><p id="invitation" class="invitation" aria-live="polite"></p><div class="letter-wrap"><article id="letter" class="letter" aria-label="your correspondence"></article><img class="letter-flower" src="./img/flower.png" alt="" aria-hidden="true" draggable="false"></div>
+<div class="letter-actions" aria-label="letter actions">
+<button id="bookmark-letter" class="illustrated-action bookmark-action" type="button" aria-pressed="false" aria-label="bookmark this letter"><span class="action-label" id="bookmark-label">bookmark</span><img src="./img/bookmark.png" alt="" draggable="false"></button>
+<button id="next-letter" class="illustrated-action next-action" type="button" aria-label="next letter"><img src="./img/letter.png" alt="" draggable="false"><span class="action-label">next letter</span></button>
+</div>
+<section class="bookmarks" aria-labelledby="bookmarks-title"><div class="bookmarks-heading"><h2 id="bookmarks-title">my bookmarked requests</h2><span id="bookmark-count"></span></div><p class="bookmarks-intro">keep invitations for now or for another day !</p><div id="bookmark-list"></div><p id="bookmark-storage-note" class="storage-note" hidden></p></section>
+<footer><img class="packages" src="./img/packages.png"><br><br>
+<div class="fragment">i believe we've earned a moment away from our worktable .. <a id="link" href="http://garden.puf.li" target="_blank">shall we step outside ?</a></div></footer></div></main><script src="./letters.js?v=1"></script><script src="./weather.js?v=1"></script><script src="./script.js?v=1"></script></body></html>
